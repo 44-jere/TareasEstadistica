@@ -1,0 +1,112 @@
+body {
+  background-color: #080719;
+  color: white;
+}
+
+headder {
+  display: flex;
+  min-height: 400px;
+}
+
+headder section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+main {
+  /*   background-color:red; */
+  padding: 2px 0;
+}
+
+main section {
+  min-height: 400px;
+  margin-bottom: 10px;
+  /*   background-color:green; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0 5px;
+}
+
+.not-expanded {
+  align-items: center;
+  overflow-x: auto;
+  min-height: 300px;
+}
+
+.expanded {
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+main section article {
+  /*   background-color:blue; */
+  gap: 10px;
+  display: flex;
+  padding: 0 5px;
+}
+.card {
+  flex: 0 0 auto;
+  height: 200px;
+  background-color: black;
+  width: 250px;
+  display: flex;
+  flex-direction: column-reverse;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.card footer {
+  background-color: #5022a8;
+  height: 40%;
+  border-radius: 20px 20px 0 0;
+}
+
+.boton{
+  cursor: pointer;
+  &:hover{
+    color: #5022a8;
+    text-decoration: underline;
+  }
+  &:active{
+    color: black;
+  }
+}
+
+.hero {
+  background-image: url("./Diseño\ sin\ título.png");
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+}
+
+.centerImage{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#carniceria{
+  background-image: url("./Carniceria.png");
+}
+#cssgrid{
+  background-image: url("./CSSGrid.png");
+}
+#finance{
+  background-image: url("./finance.png");
+}
+#learningZIndex{
+  background-image: url("./LearningZindex.png");
+}
+#TallerMate{
+  background-image: url("./TallerMate.png");
+}
+#TallerVideoJuegos{
+  background-image: url("./TallerVideoJuegos.png");
+}
+#usandoResponsiveDesign{
+  background-image: url("./usandoResponsiveDesign.png");
+}

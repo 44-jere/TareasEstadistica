@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distribución Normal en Agroforestería</title>
+    <style>
+        :root {
+            --primary-color: #2E7D32;
+            --secondary-color: #81C784;
+            --accent-color: #4CAF50;
+            --text-color: #333;
+            --light-bg: #F5F5F5;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--light-bg);
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .section {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        img {
+            width: 100%;
+            height: 200px;
+            border-radius: 8px;
+            margin: 1rem 0;
+            object-fit: cover;
+        }
+
+        .properties-list {
+            list-style: none;
+        }
+
+        .properties-list li {
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .properties-list li::before {
+            content: "•";
+            color: var(--accent-color);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        .reflection-box {
+            background-color: var(--light-bg);
+            border-left: 4px solid var(--accent-color);
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+
+        @media (max-width: 768px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>La Distribución Normal en Agroforestería</h1>
+        <p>Una exploración de la curva gaussiana y su importancia en estudios forestales</p>
+    </header>
+
+    <div class="container">
+        <section class="section">
+            <h2>¿Qué es la Distribución Normal?</h2>
+            <img src="/api/placeholder/800/400" alt="Gráfica de la curva normal">
+            <p>La distribución normal, también conocida como distribución gaussiana, es una distribución de probabilidad continua que se caracteriza por su forma de campana simétrica. Es fundamental en estadística y en el análisis de fenómenos naturales.</p>
+        </section>
+
+        <section class="section">
+            <h2>Propiedades Importantes</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Simetría</h3>
+                    <img src="/api/placeholder/400/300" alt="Imagen de simetría">
+                    <p>La curva es perfectamente simétrica respecto a la media (μ), lo que significa que los datos se distribuyen de manera igual a ambos lados del centro.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Área Total</h3>
+                    <img src="/api/placeholder/400/300" alt="Imagen del área bajo la curva">
+                    <p>El área total bajo la curva normal es igual a 1 (100%), representando la probabilidad total de todos los eventos posibles.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Colas</h3>
+                    <img src="/api/placeholder/400/300" alt="Imagen de las colas">
+                    <p>Las colas de la distribución se extienden infinitamente en ambas direcciones, aunque los valores extremos son cada vez menos probables.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Regla Empírica (68-95-99.7)</h2>
+            <img src="/api/placeholder/800/400" alt="Diagrama de la regla empírica">
+            <ul class="properties-list">
+                <li>68% de los datos se encuentra dentro de una desviación estándar de la media</li>
+                <li>95% de los datos se encuentra dentro de dos desviaciones estándar</li>
+                <li>99.7% de los datos se encuentra dentro de tres desviaciones estándar</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>Aplicaciones en Agroforestería</h2>
+            <img src="/api/placeholder/800/400" alt="Aplicaciones en agroforestería">
+            <div class="reflection-box">
+                <h3>Fenómenos Naturales</h3>
+                <p>En agroforestería, muchas variables siguen una distribución normal, como:</p>
+                <ul class="properties-list">
+                    <li>Altura de los árboles en un bosque</li>
+                    <li>Diámetro de los troncos</li>
+                    <li>Producción de frutos por árbol</li>
+                </ul>
+            </div>
+
+            <div class="reflection-box">
+                <h3>¿Por qué es Normal?</h3>
+                <p>Las características biológicas tienden a seguir una distribución normal debido al Teorema del Límite Central y la influencia de múltiples factores ambientales y genéticos que actúan de manera independiente.</p>
+            </div>
+
+            <div class="reflection-box">
+                <h3>Impacto en Estudios</h3>
+                <p>La distribución normal permite:</p>
+                <ul class="properties-list">
+                    <li>Realizar predicciones sobre el crecimiento y desarrollo de especies</li>
+                    <li>Establecer intervalos de confianza para mediciones forestales</li>
+                    <li>Diseñar experimentos y analizar resultados con mayor precisión</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
